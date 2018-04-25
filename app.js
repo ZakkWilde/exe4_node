@@ -3,6 +3,8 @@ var app = express();
 
 var finalRoute = require('./app/routes/route')(app);
 
-app.listen(3000, function(){
+var port = process.app.PORT || 3000;
+
+app.listen(port, function(){
     console.log('Final Rodando');
 });
