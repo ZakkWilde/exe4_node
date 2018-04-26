@@ -1,0 +1,8 @@
+<mvc:View 
+    xmlns="sap.m" 
+    xmlns:mvc="sap.ui.core.mvc"
+    controllerName="treinamento.ui5.controller.App"
+    >
+    <Input id="input" placeholder="Insira um texto"/>
+    <Button text="Pressione" press="onPress"/>
+</mvc:View>
