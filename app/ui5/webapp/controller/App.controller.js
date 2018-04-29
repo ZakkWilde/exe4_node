@@ -1,21 +1,25 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller"
-], function (Controller) {
+ ], function (Controller) {
     "use strict";
     return Controller.extend("treinamento.ui5.controller.App", {
-
-        onInit: function () {},
-
-        onBeforeRendering: function () {},
-
-        onAfterRendering: function () {},
-
-        onExit: function () {},
-
+ 
+        onInit: function () {
+        },
+ 
+        onBeforeRendering: function () {
+        },
+ 
+        onAfterRendering: function () {
+        },
+ 
+        onExit: function () {
+        },
+ 
         onPress: function () {
-            alert("Foi inputado " + this.byId("input").getValue());
+          alert("Foi inputado " + this.byId("input").getValue());
         }
-
+ 
     });
-
-});
+ 
+ });
