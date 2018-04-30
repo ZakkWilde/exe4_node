@@ -21,84 +21,84 @@
         <content>
             <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Janeiro" subheader="Subtitle" press="onPress">
                 <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="sap-icon://home-share" />
+                    <ImageContent src="./img/1aqua.jpg" />
                 </TileContent>
             </GenericTile>
         </content>
         <content>
             <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Fevereiro" subheader="Subtitle" press="onPress">
                 <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="sap-icon://home-share" />
+                    <ImageContent src="./img/2fish.jpg" />
                 </TileContent>
             </GenericTile>
         </content>
         <content>
             <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Março" subheader="Subtitle" press="onPress">
                 <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="sap-icon://home-share" />
+                    <ImageContent src="./img/3ari.jpg" />
                 </TileContent>
             </GenericTile>
         </content>
         <content>
             <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Abril" subheader="Subtitle" press="onPress">
                 <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="sap-icon://home-share" />
+                    <ImageContent src="./img/4taurus.jpg" />
                 </TileContent>
             </GenericTile>
         </content>
         <content>
             <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Maio" subheader="Subtitle" press="onPress">
                 <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="sap-icon://home-share" />
+                    <ImageContent src="./img/5gemini.jpg" />
                 </TileContent>
             </GenericTile>
         </content>
         <content>
             <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Junho" subheader="Subtitle" press="onPress">
                 <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="sap-icon://home-share" />
+                    <ImageContent src="./img/6cancer.jpg" />
                 </TileContent>
             </GenericTile>
         </content>
         <content>
             <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Julho" subheader="Subtitle" press="onPress">
                 <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="sap-icon://home-share" />
+                    <ImageContent src="./img/7lion.jpg" />
                 </TileContent>
             </GenericTile>
         </content>
         <content>
             <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Agosto" subheader="Subtitle" press="onPress">
                 <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="sap-icon://home-share" />
+                    <ImageContent src="./img/8virgen.jpg" />
                 </TileContent>
             </GenericTile>
         </content>
         <content>
             <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Setembro" subheader="Subtitle" press="onPress">
                 <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="sap-icon://home-share" />
+                    <ImageContent src="./img/9balance.jpg" />
                 </TileContent>
             </GenericTile>
         </content>
         <content>
             <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Outubro" subheader="Subtitle" press="onPress">
                 <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="sap-icon://home-share" />
+                    <ImageContent src="./img/10scorpion.jpg" />
                 </TileContent>
             </GenericTile>
         </content>
         <content>
             <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Novembro" subheader="Subtitle" press="onPress">
                 <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="sap-icon://home-share" />
+                    <ImageContent src="./img/11sagi.jpg" />
                 </TileContent>
             </GenericTile>
         </content>
         <content>
             <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Dezembro" subheader="Subtitle" press="onPress">
                 <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="sap-icon://home-share" />
+                    <ImageContent src="./img/12capri.jpg" />
                 </TileContent>
             </GenericTile>
         </content>
