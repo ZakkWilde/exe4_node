@@ -1,106 +1,138 @@
 <mvc:View 
     xmlns="sap.m" 
     xmlns:mvc="sap.ui.core.mvc" controllerName="treinamento.ui5.controller.App">
-    <Page showHeader="true">
-        <customHeader>
-            <OverflowToolbar>
-                <ToolbarSpacer />
-                <Label text="Tile Actions:" />
-                <Switch state="{/actionsScope}" />
-            </OverflowToolbar>
-        </customHeader>
-    </Page>
-    <!-- <Input id="input" placeholder="Insira um texto"/>
-    <Button text="Pressione" press="onPress"/> -->
-    <Panel headerText="teste" expandable="true" expanded="true" width="auto" class="sapUiResponsiveMargin" accessibleRole="Region">
-        <headerToolbar>
-            <Toolbar height="3rem">
-                <Title text="Happy Birthday"/>
-            </Toolbar>
-        </headerToolbar>
-        <content>
-            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Janeiro" subheader="Subtitle" press="onPress">
-                <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="./img/1aqua.jpg" />
-                </TileContent>
-            </GenericTile>
-        </content>
-        <content>
-            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Fevereiro" subheader="Subtitle" press="onPress">
-                <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="./img/2fish.jpg" />
-                </TileContent>
-            </GenericTile>
-        </content>
-        <content>
-            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Março" subheader="Subtitle" press="onPress">
-                <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="./img/3ari.jpg" />
-                </TileContent>
-            </GenericTile>
-        </content>
-        <content>
-            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Abril" subheader="Subtitle" press="onPress">
-                <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="./img/4taurus.jpg" />
-                </TileContent>
-            </GenericTile>
-        </content>
-        <content>
-            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Maio" subheader="Subtitle" press="onPress">
-                <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="./img/5gemini.jpg" />
-                </TileContent>
-            </GenericTile>
-        </content>
-        <content>
-            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Junho" subheader="Subtitle" press="onPress">
-                <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="./img/6cancer.jpg" />
-                </TileContent>
-            </GenericTile>
-        </content>
-        <content>
-            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Julho" subheader="Subtitle" press="onPress">
-                <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="./img/7lion.jpg" />
-                </TileContent>
-            </GenericTile>
-        </content>
-        <content>
-            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Agosto" subheader="Subtitle" press="onPress">
-                <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="./img/8virgen.jpg" />
-                </TileContent>
-            </GenericTile>
-        </content>
-        <content>
-            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Setembro" subheader="Subtitle" press="onPress">
-                <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="./img/9balance.jpg" />
-                </TileContent>
-            </GenericTile>
-        </content>
-        <content>
-            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Outubro" subheader="Subtitle" press="onPress">
-                <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="./img/10scorpion.jpg" />
-                </TileContent>
-            </GenericTile>
-        </content>
-        <content>
-            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Novembro" subheader="Subtitle" press="onPress">
-                <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="./img/11sagi.jpg" />
-                </TileContent>
-            </GenericTile>
-        </content>
-        <content>
-            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Dezembro" subheader="Subtitle" press="onPress">
-                <TileContent unit="EUR" footer="Current Quarter">
-                    <ImageContent src="./img/12capri.jpg" />
-                </TileContent>
-            </GenericTile>
-        </content>
-    </Panel>
+    <App>
+        <pages>
+            <Page showHeader="false" id="principal" class="principalClass">
+                <content>
+                    <Panel backgroundDesign="Transparent" width="100%" height="100%" class="sapUiResponsiveMargin">
+                        <headerToolbar>
+                            <Toolbar height="3rem">
+                                <Title text="Happy Birthday"/>
+                            </Toolbar>
+                        </headerToolbar>
+                        <content>
+                            <!-- # -->
+                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Janeiro" subheader="Subtitle" press="onPress">
+                                <tileContent>
+                                    <TileContent unit="EUR" footer="Current Quarter">
+                                        <content>
+                                            <ImageContent src="./img/1aqua.jpg" />
+                                        </content>
+                                    </TileContent>
+                                </tileContent>
+                            </GenericTile>
+                            <!-- # -->
+                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Fevereiro" subheader="Subtitle" press="onPress">
+                                <tileContent>
+                                    <TileContent unit="EUR" footer="Current Quarter">
+                                        <content>
+                                            <ImageContent src="./img/2fish.jpg" />
+                                        </content>
+                                    </TileContent>
+                                </tileContent>
+                            </GenericTile>
+                            <!-- # -->
+                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Março" subheader="Subtitle" press="onPress">
+                                <tileContent>
+                                    <TileContent unit="EUR" footer="Current Quarter">
+                                        <content>
+                                            <ImageContent src="./img/3ari.jpg" />
+                                        </content>
+                                    </TileContent>
+                                </tileContent>
+                            </GenericTile>
+                            <!-- # -->
+                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Abril" subheader="Subtitle" press="onPress">
+                                <tileContent>
+                                    <TileContent unit="EUR" footer="Current Quarter">
+                                        <content>
+                                            <ImageContent src="./img/4taurus.jpg" />
+                                        </content>
+                                    </TileContent>
+                                </tileContent>
+                            </GenericTile>
+                            <!-- # -->
+                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Maio" subheader="Subtitle" press="onPress">
+                                <tileContent>
+                                    <TileContent unit="EUR" footer="Current Quarter">
+                                        <content>
+                                            <ImageContent src="./img/5gemini.jpg" />
+                                        </content>
+                                    </TileContent>
+                                </tileContent>
+                            </GenericTile>
+                            <!-- # -->
+                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Junho" subheader="Subtitle" press="onPress">
+                                <tileContent>
+                                    <TileContent unit="EUR" footer="Current Quarter">
+                                        <content>
+                                            <ImageContent src="./img/6cancer.jpg" />
+                                        </content>
+                                    </TileContent>
+                                </tileContent>
+                            </GenericTile>
+                            <!-- # -->
+                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Julho" subheader="Subtitle" press="onPress">
+                                <tileContent>
+                                    <TileContent unit="EUR" footer="Current Quarter">
+                                        <content>
+                                            <ImageContent src="./img/7lion.jpg" />
+                                        </content>
+                                    </TileContent>
+                                </tileContent>
+                            </GenericTile>
+                            <!-- # -->
+                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Agosto" subheader="Subtitle" press="onPress">
+                                <TileContent unit="EUR" footer="Current Quarter">
+                                    <ImageContent src="./img/8virgen.jpg" />
+                                </TileContent>
+                            </GenericTile>
+                            <!-- # -->
+                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Setembro" subheader="Subtitle" press="onPress">
+                                <tileContent>
+                                    <TileContent unit="EUR" footer="Current Quarter">
+                                        <content>
+                                            <ImageContent src="./img/9balance.jpg" />
+                                        </content>
+                                    </TileContent>
+                                </tileContent>
+                            </GenericTile>
+                            <!-- # -->
+                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Outubro" subheader="Subtitle" press="onPress">
+                                <tileContent>
+                                    <TileContent unit="EUR" footer="Current Quarter">
+                                        <content>
+                                            <ImageContent src="./img/10scorpion.jpg" />
+                                        </content>
+                                    </TileContent>
+                                </tileContent>
+                            </GenericTile>
+                            <!-- # -->
+                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Novembro" subheader="Subtitle" press="onPress">
+                                <tileContent>
+                                    <TileContent unit="EUR" footer="Current Quarter">
+                                        <content>
+                                            <ImageContent src="./img/11sagi.jpg" />
+                                        </content>
+                                    </TileContent>
+                                </tileContent>
+                            </GenericTile>
+                            <!-- # -->
+                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Dezembro" subheader="Subtitle" press="onPress">
+                                <tileContent>
+                                    <TileContent unit="EUR" footer="Current Quarter">
+                                        <content>
+                                            <ImageContent src="./img/12capri.jpg" />
+                                        </content>
+                                    </TileContent>
+                                </tileContent>
+                            </GenericTile>
+                            <!-- # -->
+                        </content>
+                    </Panel>
+                </content>
+            </Page>
+        </pages>
+    </App>
 </mvc:View>

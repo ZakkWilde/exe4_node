@@ -16,8 +16,11 @@ sap.ui.define([
         onExit: function () {
         },
  
-        onPress: function () {
-          alert("Foi inputado " + this.byId("input").getValue());
+        onPress: function (evt) {
+          
+            var id = evt.getId();
+          console.log(id);
+        //   console.log(evt);
         }
  
     });
