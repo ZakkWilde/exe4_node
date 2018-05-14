@@ -1,9 +1,17 @@
 <mvc:View 
     xmlns="sap.m" 
+    xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc" controllerName="treinamento.ui5.controller.App">
     <App>
         <pages>
-            <Page showHeader="false" id="principal" class="principalClass">
+            <Page showHeader="true" showNavButton="true" id="principal" class="principalClass">
+                <customHeader>
+			        <OverflowToolbar>
+				    <ToolbarSpacer />
+				    <Label text="Relatório:" />
+				    <Switch state="{/actionsScope}" />
+			        </OverflowToolbar>
+		        </customHeader>
                 <content>
                     <Panel backgroundDesign="Transparent" width="100%" height="100%" class="sapUiResponsiveMargin">
                         <headerToolbar>
@@ -13,7 +21,10 @@
                         </headerToolbar>
                         <content>
                             <!-- # -->
-                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Janeiro" subheader="Subtitle" press="onPress">
+                            <GenericTile 
+                                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                                    header="Janeiro" subheader="Subtitle" press="onPress"
+                                    scope="{=${/actionsScope} ? 'Actions' : 'Display'}">
                                 <tileContent>
                                     <TileContent unit="EUR" footer="Current Quarter">
                                         <content>
@@ -23,7 +34,10 @@
                                 </tileContent>
                             </GenericTile>
                             <!-- # -->
-                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Fevereiro" subheader="Subtitle" press="onPress">
+                            <GenericTile 
+                                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                                    header="Fevereiro" subheader="Subtitle" press="onPress"
+                                    scope="{=${/actionsScope} ? 'Actions' : 'Display'}">
                                 <tileContent>
                                     <TileContent unit="EUR" footer="Current Quarter">
                                         <content>
@@ -33,7 +47,10 @@
                                 </tileContent>
                             </GenericTile>
                             <!-- # -->
-                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Março" subheader="Subtitle" press="onPress">
+                            <GenericTile 
+                                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                                    header="Março" subheader="Subtitle" press="onPress"
+                                    scope="{=${/actionsScope} ? 'Actions' : 'Display'}">
                                 <tileContent>
                                     <TileContent unit="EUR" footer="Current Quarter">
                                         <content>
@@ -43,7 +60,10 @@
                                 </tileContent>
                             </GenericTile>
                             <!-- # -->
-                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Abril" subheader="Subtitle" press="onPress">
+                            <GenericTile 
+                                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                                    header="Abril" subheader="Subtitle" press="onPress"
+                                    scope="{=${/actionsScope} ? 'Actions' : 'Display'}">
                                 <tileContent>
                                     <TileContent unit="EUR" footer="Current Quarter">
                                         <content>
@@ -53,7 +73,10 @@
                                 </tileContent>
                             </GenericTile>
                             <!-- # -->
-                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Maio" subheader="Subtitle" press="onPress">
+                            <GenericTile 
+                                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                                    header="Maio" subheader="Subtitle" press="onPress"
+                                    scope="{=${/actionsScope} ? 'Actions' : 'Display'}">
                                 <tileContent>
                                     <TileContent unit="EUR" footer="Current Quarter">
                                         <content>
@@ -63,7 +86,10 @@
                                 </tileContent>
                             </GenericTile>
                             <!-- # -->
-                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Junho" subheader="Subtitle" press="onPress">
+                            <GenericTile 
+                                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                                    header="Junho" subheader="Subtitle" press="onPress"
+                                    scope="{=${/actionsScope} ? 'Actions' : 'Display'}">
                                 <tileContent>
                                     <TileContent unit="EUR" footer="Current Quarter">
                                         <content>
@@ -73,7 +99,10 @@
                                 </tileContent>
                             </GenericTile>
                             <!-- # -->
-                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Julho" subheader="Subtitle" press="onPress">
+                            <GenericTile 
+                                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                                    header="Julho" subheader="Subtitle" press="onPress"
+                                    scope="{=${/actionsScope} ? 'Actions' : 'Display'}">
                                 <tileContent>
                                     <TileContent unit="EUR" footer="Current Quarter">
                                         <content>
@@ -83,13 +112,19 @@
                                 </tileContent>
                             </GenericTile>
                             <!-- # -->
-                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Agosto" subheader="Subtitle" press="onPress">
+                            <GenericTile 
+                                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                                    header="Agosto" subheader="Subtitle" press="onPress"
+                                    scope="{=${/actionsScope} ? 'Actions' : 'Display'}">
                                 <TileContent unit="EUR" footer="Current Quarter">
                                     <ImageContent src="./img/8virgen.jpg" />
                                 </TileContent>
                             </GenericTile>
                             <!-- # -->
-                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Setembro" subheader="Subtitle" press="onPress">
+                            <GenericTile 
+                                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                                    header="Setembro" subheader="Subtitle" press="onPress"
+                                    scope="{=${/actionsScope} ? 'Actions' : 'Display'}">
                                 <tileContent>
                                     <TileContent unit="EUR" footer="Current Quarter">
                                         <content>
@@ -99,7 +134,10 @@
                                 </tileContent>
                             </GenericTile>
                             <!-- # -->
-                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Outubro" subheader="Subtitle" press="onPress">
+                            <GenericTile 
+                                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                                    header="Outubro" subheader="Subtitle" press="onPress"
+                                    scope="{=${/actionsScope} ? 'Actions' : 'Display'}">
                                 <tileContent>
                                     <TileContent unit="EUR" footer="Current Quarter">
                                         <content>
@@ -109,7 +147,10 @@
                                 </tileContent>
                             </GenericTile>
                             <!-- # -->
-                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Novembro" subheader="Subtitle" press="onPress">
+                            <GenericTile 
+                                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                                    header="Novembro" subheader="Subtitle" press="onPress"
+                                    scope="{=${/actionsScope} ? 'Actions' : 'Display'}">
                                 <tileContent>
                                     <TileContent unit="EUR" footer="Current Quarter">
                                         <content>
@@ -119,7 +160,10 @@
                                 </tileContent>
                             </GenericTile>
                             <!-- # -->
-                            <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Dezembro" subheader="Subtitle" press="onPress">
+                            <GenericTile 
+                                    class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                                    header="Dezembro" subheader="Subtitle" press="onPress"
+                                    scope="{=${/actionsScope} ? 'Actions' : 'Display'}">
                                 <tileContent>
                                     <TileContent unit="EUR" footer="Current Quarter">
                                         <content>
